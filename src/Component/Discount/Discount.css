@@ -1,11 +1,4 @@
-@font-face {
-    font-family:font_1 ;
-    src: url(/QuickBite/public/font/BBH_Bogle/BBHBogle-Regular.ttf);
-}
-@font-face {
-    font-family:font_2 ;
-    src: url(/QuickBite/font/Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf);
-}
+
 .discount {
   display: flex;
   align-items: center;
