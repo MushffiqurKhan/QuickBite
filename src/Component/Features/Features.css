@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Section */
+.features {
+  padding: 60px 40px;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+/* Heading */
+.features-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Slider viewport */
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Sliding container */
+.features-container {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+
+/* Cards */
+.feature-card {
+  min-width: 250px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.feature-card:hover{
+     transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(255, 77, 48, 0.25);
+}
+
+/* Icon */
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.feature-card h3 {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.feature-card p {
+  font-size: 14px;
+  color: #555;
+}

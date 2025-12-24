@@ -1,0 +1,161 @@
+@font-face {
+    font-family:font_1 ;
+    src: url(/QuickBite/public/font/BBH_Bogle/BBHBogle-Regular.ttf);
+}
+@font-face {
+    font-family:font_2 ;
+    src: url(/QuickBite/font/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf);
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background-color: #fff7f4;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #222;
+  font-family: font_1;
+}
+
+.hero-content h1 span {
+  color: #ff4d30;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #555;
+  font-family: font_2;
+}
+
+.hero-search {
+  display: flex;
+  margin-top: 30px;
+}
+
+.hero-search input {
+  width: 300px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.hero-search button {
+  padding: 12px 20px;
+  background-color: #ff4d30;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+}
+
+.hero-search button:hover {
+  background-color: #e6432a;
+}
+
+.hero-image img {
+  width: 420px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding: 70px 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-image img {
+    width: 380px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 60px 30px;
+  }
+
+  .hero-content {
+    max-width: 55%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 340px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-search {
+    justify-content: center;
+  }
+
+  .hero-search input {
+    width: 70%;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .hero-image img {
+    width: 300px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-search {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-search input,
+  .hero-search button {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .hero-image img {
+    width: 260px;
+  }
+}

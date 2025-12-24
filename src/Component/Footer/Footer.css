@@ -1,0 +1,74 @@
+.footer {
+  background-color: #111;
+  color: #ddd;
+  padding: 60px 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Brand */
+.footer-logo {
+  color: #ff4d4d;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Text */
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+/* Lists */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer-section ul li:hover {
+  color: #ff4d4d;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons span {
+  font-size: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icons span:hover {
+  transform: scale(1.2);
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #777;
+}

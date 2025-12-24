@@ -1,0 +1,156 @@
+@font-face {
+    font-family:font_1 ;
+    src: url(/QuickBite/public/font/BBH_Bogle/BBHBogle-Regular.ttf);
+}
+@font-face {
+    font-family:font_2 ;
+    src: url(/QuickBite/font/Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf);
+}
+.discount {
+  display: flex;
+  align-items: center;
+  background-color: #ff4d30;
+  color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 40px auto;
+  max-width: 1000px;
+  transition: all 0.4s ease;
+  margin-top: 50px;
+}
+.discount:hover{
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+/* LEFT IMAGE */
+.discount-left {
+  padding: 20px;
+}
+
+.discount-left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+}
+
+/* MIDDLE CONTENT */
+.discount-middle {
+  flex: 1;
+  padding: 20px;
+}
+
+.discount-middle h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-family: font_2;
+  font-style: italic;
+
+}
+
+.discount-middle h1 span {
+  margin: 0 10px;
+}
+
+.discount-middle p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: font_2;
+  font-style: italic;
+}
+
+/* RIGHT DISCOUNT */
+.discount-right {
+  background-color: #fff7f4;
+  color: #ff4d30;
+  padding: 30px;
+  text-align: center;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+}
+
+.discount-right h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-family: font_1;
+}
+
+.discount-right span {
+  font-size: 15px;
+  writing-mode: vertical-rl;
+   font-family: font_1;
+   font-weight: 500;
+  font-style: italic;
+   
+   
+}
+@media (max-width: 1024px) {
+  .discount {
+    max-width: 90%;
+  }
+
+  .discount-middle h1 {
+    font-size: 40px;
+  }
+
+  .discount-middle p {
+    font-size: 18px;
+  }
+
+  .discount-right h2 {
+    font-size: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .discount {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .discount-left img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .discount-middle h1 {
+    font-size: 32px;
+  }
+
+  .discount-middle p {
+    font-size: 16px;
+  }
+
+  .discount-right {
+    width: 100%;
+    clip-path: none;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .discount-right span {
+    writing-mode: horizontal-tb;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .discount {
+    margin-top: 30px;
+  }
+
+  .discount-middle h1 {
+    font-size: 26px;
+  }
+
+  .discount-middle p {
+    font-size: 14px;
+  }
+
+  .discount-right h2 {
+    font-size: 32px;
+  }
+}

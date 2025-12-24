@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza",
+    "img": "/image/pizza.jfif",
+    "desc": "Pizza is a popular Italian dish made with a crispy base, rich tomato sauce, melted cheese, and delicious toppings. It is loved for its cheesy flavor and variety of styles."
+  },
+  {
+    "id": 2,
+    "name": "Burger",
+    "img": "/image/images.jfif",
+    "desc": "Burger is a classic fast food made with a soft bun, juicy patty, fresh vegetables, and tasty sauces. It is filling, flavorful, and perfect for quick meals."
+  },
+  {
+    "id": 3,
+    "name": "Biryani",
+    "img": "/image/biryani.jfif",
+    "desc": "Biryani is a traditional rice dish cooked with aromatic spices, herbs, and meat or vegetables. It is famous for its rich taste and mouth-watering aroma."
+  },
+  {
+    "id": 4,
+    "name": "Chinese",
+    "img": "/image/chinese.jfif",
+    "desc": "Chinese food includes noodles, fried rice, and stir-fried dishes prepared with sauces and vegetables. It is known for its bold flavors and quick cooking style."
+  },
+  {
+    "id": 5,
+    "name": "Desserts",
+    "img": "/image/desert.jfif",
+    "desc": "Desserts are sweet dishes enjoyed after meals, such as cakes, ice creams, and pastries. They add happiness and a sweet ending to any meal."
+  },
+  {
+    "id": 6,
+    "name": "Drinks",
+    "img": "/image/drink.jfif",
+    "desc": "Drinks include refreshing beverages like juices, soft drinks, and shakes. They help to relax, refresh the body, and complete the food experience."
+  },
+  {
+  "id": 7,
+  "name": "Dosa",
+  "img": "/image/dosa.jfif",
+  "desc": "Dosa is a popular South Indian dish made from fermented rice and lentil batter. It is thin, crispy, and usually served with chutney and sambar."
+}
+]
