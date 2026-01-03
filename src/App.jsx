@@ -5,16 +5,38 @@ import Categories from "./Component/Categories/Categories";
 import Discount from "./Component/Discount/Discount";
 import Features from "./Component/Features/Features";
 import Footer from "./Component/Footer/Footer";
+import AboutUs from "./Component/About/AboutUs";
+import { Route, Routes } from "react-router-dom";
+import CategoriesPage from "./Component/CategoriesPage/CategoriesPage";
 
 function App() {
   return (
     <>
+      {/* Fixed Navbar */}
       <Navbar />
-      <Hero />
-      <Categories/>
-      <Discount/>
-      <Features/>
-      <Footer/>
+
+      <Routes>
+        {/* HOME PAGE */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Categories />
+              <Discount />
+              <Features />
+            </>
+          }
+        />
+
+        {/* ABOUT PAGE */}
+        <Route path="/about" element={<AboutUs />} />
+        {/* CategoriesPage */}
+        <Route path="/categoriesPage" element={<CategoriesPage />} />
+      </Routes>
+
+      {/* Fixed Footer */}
+      <Footer />
     </>
   );
 }

@@ -6,7 +6,6 @@
   padding: 18px 60px;
   background-color: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  
 }
 
 .logo {
@@ -41,6 +40,15 @@
 .nav-links li:hover {
   color: #ff4d30;
 }
+.nav-links a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.nav-links a.active {
+  color: #ff4d30;
+}
+
 
 .nav-icons {
   display: flex;

@@ -1,6 +1,9 @@
 import React from "react";
 import "./Categories.css";
 import categoriesData from "../JSON/CategoriesJSON/Categories.json";
+import { Link } from "react-router-dom";
+
+
 function Categories() {
   return (
     <section className="categories">
@@ -13,7 +16,9 @@ function Categories() {
                 <img src={categories.img} alt={categories.name} />
                 <h3>{categories.name}</h3>
                 <p>{categories.desc}</p>
+                <Link to="/categoriesPage">
                 <button className="order-btn">View Details</button>
+                </Link>
             </div>
         ))}
       </div>
