@@ -1,10 +1,11 @@
 import React from "react";
 import "./Categories.css";
 import categoriesData from "../JSON/CategoriesJSON/Categories.json";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function Categories() {
+   const navigate = useNavigate();
   return (
     <section className="categories">
       <div className="heading">
@@ -16,9 +17,12 @@ function Categories() {
                 <img src={categories.img} alt={categories.name} />
                 <h3>{categories.name}</h3>
                 <p>{categories.desc}</p>
-                <Link to="/categoriesPage">
-                <button className="order-btn">View Details</button>
-                </Link>
+             <button
+              className="order-btn"
+              onClick={() => navigate("/categoriesPage")}
+            >
+              View Details
+            </button>
             </div>
         ))}
       </div>

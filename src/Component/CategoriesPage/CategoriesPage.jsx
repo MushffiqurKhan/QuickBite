@@ -1,5 +1,5 @@
 import { useState } from "react";
-import foodItems from "../JSON//CategoriesJSON/foodItem";
+import foodItems from "../JSON/CategoriesJSON/foodItem";
 import "./CategoriesPage.css";
 
 const categories = ["all", "breakfast", "lunch", "drink", "starter"];
