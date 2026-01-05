@@ -27,6 +27,21 @@ const foodItems = [
     price: 110,
     image: "/image/French Fries.jpg",
   },
-];
+       {
+    id: 5,
+    name: "Biryani",
+    category: "lunch",
+    price: 350,
+    image: "/image/biryani.jfif",
+  },
+      {
+    id: 6,
+    name: "Dosa",
+    category: "breakfast",
+    price: 90,
+    image: "/image/dosa.jfif",
+  }
+  ];
+
 
 export default foodItems;
