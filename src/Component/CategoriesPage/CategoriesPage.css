@@ -1,4 +1,12 @@
 
+@font-face {
+  font-family: myfont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-ExtraBold.ttf);
+}
+@font-face {
+  font-family: normalFont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-Medium.ttf);
+}
 .filter-buttons {
   display: flex;
   gap: 12px;
@@ -13,8 +21,7 @@
   border-radius: 20px;
   border: 1px solid #ddd;
   background: white;
-  
-
+  font-family: normalFont;
   cursor: pointer;
 }
 

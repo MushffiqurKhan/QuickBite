@@ -1,3 +1,11 @@
+@font-face {
+  font-family: myfont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-ExtraBold.ttf);
+}
+@font-face {
+  font-family: normalFont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-Medium.ttf);
+}
 .about {
   padding: 60px 0;
   background: #f9f9f9;
@@ -21,7 +29,6 @@
 
 .about_contain {
   flex: 1;
-    
 }
 
 .about_contain h2 {
@@ -29,6 +36,7 @@
   margin-bottom: 15px;
   color: #222;
   text-align: center;
+  font-family: myfont;
 }
 
 .about_contain p {
@@ -36,6 +44,7 @@
   line-height: 1.7;
   color: #121212;
   text-align: center;
+  font-family: normalFont;
 
 }
 
@@ -74,6 +83,7 @@
   margin: 0;
   font-weight: 500;
   color: #201f1f;
+  
 }
 
 .about_img {

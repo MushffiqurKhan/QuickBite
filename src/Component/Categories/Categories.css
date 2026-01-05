@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: myfont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-ExtraBold.ttf);
+}
+@font-face {
+  font-family: normalFont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-Medium.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +21,7 @@
   /* border: 2px solid green; */
   text-align: center;
   margin-bottom: 30px;
-  font-family: font_1;
+  font-family: myfont;
   font-size: 40px;
   font-weight: 500;
 
@@ -58,11 +65,9 @@
   );
   opacity: 0;
   transition: opacity 0.35s ease;
+  pointer-events: none;   
 }
 
-.card:hover::before {
-  opacity: 1;
-}
 
 /* Image */
 .card img {
@@ -85,23 +90,16 @@
   font-weight: 600;
   color: #333;
   margin-top: 8px;
-  font-family: font_2;
+  font-family: normalfont;
 }
 .card p{
   font-family: font_2;
 font-size: 18px;
   font-weight: 300;
+  font-family: normalfont;
+
 }
-/* .order-btn{
-  padding: 12px 24px;
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top:10px ;
-} */
- .order-btn {
+.order-btn {
   padding: 12px 24px;
   background: rgb(247, 47, 47);
   color: white;
@@ -109,6 +107,8 @@ font-size: 18px;
   border-radius: 25px;
   cursor: pointer;
   font-size: 16px;
+  font-family: normalfont;
+
 }
 
 .order-btn:hover{

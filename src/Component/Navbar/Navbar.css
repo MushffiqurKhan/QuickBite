@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: myfont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-ExtraBold.ttf);
+}
+@font-face {
+  font-family: normalFont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-Medium.ttf);
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -12,7 +19,7 @@
   font-size: 24px;
   font-weight: bold;
   color: #ff4d30;
-  font-family: font_2;
+  font-family: myfont;
 }
 
 .logo span {
@@ -31,7 +38,7 @@
   font-weight: 550;
   font-size: 18px;
   color: #333;
-  font-family:font_2;
+ font-family: normalFont;
   /* border: 2px solid rgb(193, 103, 103); */
   
 

@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: myfont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-ExtraBold.ttf);
+}
+@font-face {
+  font-family: normalFont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-Medium.ttf);
+}
 .discount {
   display: flex;
   align-items: center;
@@ -37,7 +44,7 @@
 .discount-middle h1 {
   font-size: 50px;
   margin-bottom: 10px;
-  font-family: font_2;
+  font-family: myfont;
   font-style: italic;
 
 }
@@ -65,13 +72,13 @@
 .discount-right h2 {
   font-size: 50px;
   margin-bottom: 10px;
-  font-family: font_1;
+  font-family: myfont;
 }
 
 .discount-right span {
   font-size: 15px;
   writing-mode: vertical-rl;
-   font-family: font_1;
+   font-family: myfont;
    font-weight: 500;
   font-style: italic;
    
