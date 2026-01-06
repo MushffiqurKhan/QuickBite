@@ -1,3 +1,11 @@
+@font-face {
+  font-family: myfont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-ExtraBold.ttf);
+}
+@font-face {
+  font-family: normalFont;
+  src: url(/public/Alegreya_SC/AlegreyaSC-Medium.ttf);
+}
 .footer {
   background-color: #111;
   color: #ddd;
@@ -17,11 +25,13 @@
   color: #ff4d4d;
   font-size: 28px;
   margin-bottom: 15px;
+    font-family: normalFont;
 }
 
 .footer-section h3 {
   color: #fff;
   margin-bottom: 15px;
+  font-family: normalFont;
 }
 
 /* Text */
@@ -29,6 +39,7 @@
   font-size: 14px;
   line-height: 1.6;
   color: #bbb;
+    font-family: normalFont;
 }
 
 /* Lists */
@@ -41,6 +52,7 @@
   margin-bottom: 10px;
   cursor: pointer;
   color: #bbb;
+    font-family: normalFont;
   transition: color 0.3s;
 }
 
@@ -71,4 +83,5 @@
   padding-top: 15px;
   font-size: 13px;
   color: #777;
+  font-family: normalFont;
 }

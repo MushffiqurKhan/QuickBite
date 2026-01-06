@@ -16,7 +16,7 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='about'>About</NavLink></li>
         <li><NavLink to='categoriesPage'>Categories</NavLink></li>
-        <li>Features</li>
+        <li>Features</li> 
       </ul>
 
       {/* Icons */}
