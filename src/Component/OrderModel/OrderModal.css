@@ -1,0 +1,94 @@
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Box */
+.modal {
+  background: white;
+  width: 450px;
+  padding: 20px;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Food Info */
+.food-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.food-info img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.price {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+/* Quantity */
+.quantity-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.quantity-section button {
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+/* Form */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-section input,
+.form-section textarea,
+.form-section select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.cancel-btn {
+  background: gray;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+.confirm-btn {
+  background: #ff4d4d;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

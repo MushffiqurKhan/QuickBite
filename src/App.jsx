@@ -9,6 +9,7 @@ import AboutUs from "./Component/About/AboutUs";
 import { Route, Routes } from "react-router-dom";
 import CategoriesPage from "./Component/CategoriesPage/CategoriesPage";
 
+
 function App() {
   return (
     <>
@@ -37,6 +38,8 @@ function App() {
 
       {/* Fixed Footer */}
       <Footer />
+     
+      
     </>
   );
 }

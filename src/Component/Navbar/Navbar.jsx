@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  
   return (
     <nav className="navbar">
       {/* Logo */}

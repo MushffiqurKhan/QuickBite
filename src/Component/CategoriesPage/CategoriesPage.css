@@ -65,7 +65,7 @@
   background: #ffe5cc;
   color: #ff7a00;
 }
-.order-btn{
+/* .order-btn{
   padding: 8px 16px;
   background-color: #ff4d4d;
   color: white;
@@ -73,7 +73,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top:10px ;
-}
+} */
 .order-btn:hover{
   background-color: #e63939;
 }
@@ -139,6 +139,12 @@
   background: #ffe5cc;
   color: #ff7a00;
 }
+.button_box{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
 .order-btn{
   padding: 8px 16px;
   background-color: #ff4d4d;
@@ -146,7 +152,8 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top:10px ;
+ 
+ 
 }
 .order-btn:hover{
   background-color: #e63939;
