@@ -1,9 +1,12 @@
 import "./Navbar.css";
 import { FaSearch, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
-import { useState } from "react";
+import { useState,useContext } from "react";
+import { CartContext } from "../Context/CartContext";
 import { NavLink } from "react-router-dom";
+import { span } from "framer-motion/client";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const{totalItems} = useContext(CartContext);
 
   return (
     <nav className="navbar">
@@ -21,10 +24,13 @@ const Navbar = () => {
       {/* Icons */}
       <div className="nav-icons">
         <FaSearch className="icon" />
-        <div className="cart-icon">
+        <NavLink to="/cart"><div className="cart-icon">
           <FaShoppingCart className="icon" />
+          {totalItems > 0  && (
+            <span className="cart-count">{totalItems}</span>
+          )}
         </div>
-
+        </NavLink>
         {/* Hamburger Icon */}
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}

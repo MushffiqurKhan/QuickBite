@@ -8,6 +8,7 @@ import Footer from "./Component/Footer/Footer";
 import AboutUs from "./Component/About/AboutUs";
 import { Route, Routes } from "react-router-dom";
 import CategoriesPage from "./Component/CategoriesPage/CategoriesPage";
+import Cart from "./Component/CartPage/Cart";
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         {/* CategoriesPage */}
         <Route path="/categoriesPage" element={<CategoriesPage />} />
+        {/* CartPage */}
+        <Route path="/cart" element={<Cart/>}/>
       </Routes>
 
       {/* Fixed Footer */}

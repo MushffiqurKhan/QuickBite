@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useContext } from "react";
+import { CartContext } from "../Context/CartContext";
 import foodItems from "../JSON/CategoriesJSON/foodItem";
 import "./CategoriesPage.css";
 import OrderModal from "../OrderModel/OrderModal";
@@ -6,6 +8,10 @@ import OrderModal from "../OrderModel/OrderModal";
 const categories = ["all", "breakfast", "lunch", "drink", "starter"];
 
 export default function CategoriesPage() {
+
+const { addToCart } = useContext(CartContext);
+
+
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedFood, setSelectedFood] = useState(null);
 const [isModalOpen, setIsModalOpen] = useState(false);
@@ -47,7 +53,11 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               setIsModalOpen(true)
             }}>
             Order</button>
-            <button className="order-btn">Add to cart</button>
+            <button className="order-btn"
+            onClick={() =>{
+           
+
+              addToCart(item)}}>Add to cart</button>
             </div>
           </div>
         ))}
