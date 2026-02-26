@@ -142,8 +142,7 @@
 .button_box{
   /* border: 2px solid black; */
   display: flex;
-  justify-content: space-between;
-  /* gap: 10px; */
+  justify-content: space-around;
 }
 .order-btn{
   padding: 8px 16px;
@@ -158,13 +157,80 @@
 .order-btn:hover{
   background-color: #e63939;
 }
-@media (max-width: 1200px) {
+/* ===============================
+   Large Tablets (992px and down)
+================================= */
+@media (max-width: 992px) {
+
+  .cards {
+    justify-content: center;
+  }
+
   .card {
-    margin-bottom: 20px;
+    width: 45%;
+  }
+
+}
+
+
+/* ===============================
+   Tablets (768px and down)
+================================= */
+@media (max-width: 768px) {
+
+  .card {
+    width: 80%;
+  }
+
+  .filter-buttons {
+    gap: 8px;
+  }
+
+  .filter-buttons button {
+    padding: 6px 14px;
+    font-size: 14px;
   }
 }
-@media (max-width: 514px) {
-  .filter-buttons{
-    flex-wrap: wrap;
+/* ===============================
+   Mobile Devices (576px and down)
+================================= */
+@media (max-width: 576px) {
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .card {
+    width: 95%;
+  }
+
+  .card-img {
+    height: 140px;
+  }
+
+  .button_box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .order-btn {
+    width: 100%;
+  }
+
+}
+/* ===============================
+   Small Mobile (400px and down)
+================================= */
+@media (max-width: 400px) {
+
+  .filter-buttons button {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  .card-img {
+    height: 120px;
+  }
+
 }
